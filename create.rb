@@ -17,10 +17,9 @@ report = ThinReports::Report.create do
         pays.add_row :detail_text => 'detail_text2'
       end
     end
-  end
-  
-  page.list(:block1).hide # １つ目のブロックを非表示
-  page.list(:block2).hide # ２つ目のブロックを非表示
+    # page.list(:block1).hide # １つ目のブロックを非表示
+    # page.list(:block2).hide # ２つ目のブロックを非表示
+  end  
 end
 
 report.generate(:filename => 'pdf/' + (ARGV[0] || 'output') + '.pdf')
