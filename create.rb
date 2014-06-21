@@ -22,4 +22,4 @@ report = ThinReports::Report.create do
   end  
 end
 
-report.generate(:filename => 'pdf/' + (ARGV[0] || 'output') + '.pdf')
+report.generate(:filename => 'PDF/' + (ARGV[0] || 'output') + '.pdf')
